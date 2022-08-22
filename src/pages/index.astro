@@ -1,0 +1,27 @@
+---
+import Footer from "../components/footer.astro";
+import Navigation from "../components/navigation.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<Navigation></Navigation>
+		<Footer></Footer>
+	</body>
+</html>
+
+<style>
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+
+	body {
+		@apply bg-gray-50
+	}
+</style>
