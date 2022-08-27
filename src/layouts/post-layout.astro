@@ -1,6 +1,7 @@
 ---
 import Footer from "../components/footer.astro";
 import Navigation from "../components/navigation.astro";
+const { content } = Astro.props;
 ---
 
 <html lang="en">
@@ -8,12 +9,16 @@ import Navigation from "../components/navigation.astro";
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content="David Jaimes website powered by Google Domains, Astro.build, and GitHub Pages." />
-		<title>Astro</title>
+		<title>{content.title}</title>
 	</head>
 	<body>
 		<Navigation></Navigation>
-		
+        <div class="max-w-4xl mx-auto px-4 md:px-6 sm:px-4 xs:px-6 lg:px-0 xl:px-0 py-14 text-zinc-700">
+            <h1 class="text-4xl font-bold text-center pb-4">{content.title}</h1>
+            <div class="post-content">
+                <slot/>
+            </div>
+        </div>
 		<Footer></Footer>
 	</body>
 </html>
