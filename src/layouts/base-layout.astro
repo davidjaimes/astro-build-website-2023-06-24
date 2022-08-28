@@ -1,0 +1,33 @@
+---
+import Footer from "../components/footer.astro";
+import Navigation from "../components/navigation.astro";
+const { title } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="David Jaimes website powered by Google Domains, Astro.build, and GitHub Pages." />
+		<title>David Jaimes - {title}</title>
+	</head>
+	<body>
+		<Navigation></Navigation>
+        <slot/>
+		<Footer></Footer>
+	</body>
+</html>
+
+<style>
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+
+    :global(.post-content h2) {
+        @apply text-2xl font-bold pb-6 pt-10;
+    }
+    :global(.post-content p) {
+        @apply pb-6 font-normal leading-relaxed
+    }
+</style>

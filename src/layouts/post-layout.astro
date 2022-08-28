@@ -1,37 +1,12 @@
 ---
-import Footer from "../components/footer.astro";
-import Navigation from "../components/navigation.astro";
-const { content } = Astro.props;
+import BaseLayout from "./base-layout.astro";
+const { frontmatter } = Astro.props;
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{content.title}</title>
-	</head>
-	<body>
-		<Navigation></Navigation>
-        <div class="max-w-4xl mx-auto px-4 md:px-6 sm:px-4 xs:px-6 lg:px-0 xl:px-0 py-14 text-zinc-700">
-            <h1 class="text-4xl font-bold text-center pb-4">{content.title}</h1>
-            <div class="post-content">
-                <slot/>
-            </div>
-        </div>
-		<Footer></Footer>
-	</body>
-</html>
-
-<style>
-	@tailwind base;
-	@tailwind components;
-	@tailwind utilities;
-
-    :global(.post-content h2) {
-        @apply text-2xl font-bold pb-6 pt-10;
-    }
-    :global(.post-content p) {
-        @apply pb-6 font-normal leading-relaxed
-    }
-</style>
+<BaseLayout title={frontmatter.title}>
+	<div class="max-w-4xl mx-auto px-4 md:px-6 sm:px-4 xs:px-6 lg:px-0 xl:px-0 py-14 text-zinc-700">
+		<h1 class="text-4xl font-bold text-center pb-4">{frontmatter.title}</h1>
+		<div class="post-content">
+			<slot/>
+		</div>
+	</div>
+</BaseLayout>
