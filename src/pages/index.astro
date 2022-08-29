@@ -1,5 +1,11 @@
 ---
 import BaseLayout from "../layouts/base-layout.astro";
+const posts = await Astro.glob('../pages/*.md');
 ---
 <BaseLayout title="Home">
+    <div class="max-w-4xl mx-auto px-4 md:px-6 sm:px-4 xs:px-6 lg:px-0 xl:px-0 py-14 text-zinc-700">
+		<ul>
+            {posts.map(post => <li>{post.frontmatter.title}</li>)}
+        </ul>
+	</div>
 </BaseLayout>
