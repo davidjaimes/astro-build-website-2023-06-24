@@ -1,8 +1,7 @@
 ---
 layout: ../layouts/post-layout.astro
-date: 2022-01-03
+date: "Sep 04, 2022"
 title: Terms of Use
-path: /legal
 badges:
     - Copyright
 image: mount-laguna.webp
