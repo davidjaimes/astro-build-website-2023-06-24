@@ -2,30 +2,30 @@
 import Icon from "./icon.astro";
 ---
 
-<nav class="sticky top-0 bg-zinc-900 backdrop-filter backdrop-blur-lg bg-opacity-70">
+<nav class="sticky top-0 bg-[#f5f5f7] backdrop-filter backdrop-blur-lg bg-opacity-70">
     <div class="max-w-4xl mx-auto px-4 md:px-6 sm:px-4 xs:px-6 lg:px-0 xl:px-0 sticky">
         <div class="flex justify-between">
             <div class="flex space-x-4">
                 <!-- logo -->
                 <div>
-                    <a href="/" class="flex items-center py-3 text-zinc-100">
-                        <Icon pathfill="#f4f4f5"></Icon>
+                    <a href="/" class="flex items-center py-3 text-[#6e6e73]">
+                        <Icon pathfill="#6e6e73"></Icon>
                         <span class="font-light text-lg">davidjaimes.com</span>
                     </a>
                 </div>
                 <!-- primary nav -->
                 <div class="hidden md:flex flex items-center space-x-1">
-                    <a href="/about" class="py-3 px-3 text-zinc-400 hover:text-zinc-300">About</a>
-                    <a href="/macOS" class="py-3 px-3 text-zinc-400 hover:text-zinc-300">macOS</a>
+                    <a href="/about" class="py-3 px-3 text-[#6e6e73] hover:text-zinc-300">About</a>
+                    <a href="/macOS" class="py-3 px-3 text-[#6e6e73] hover:text-zinc-300">macOS</a>
                 </div>
             </div>
             <!-- secondary nav -->
             <div class="hidden md:flex flex items-center space-x-1">
-                <a href="/documentation" class="py-3 px-3 text-zinc-400 hover:text-zinc-300">Documentation</a>
+                <a href="/documentation" class="py-3 px-3 text-[#6e6e73] hover:text-zinc-300">Documentation</a>
                 <a href="https://github.com/davidjaimes" class="py-1 px-3 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded transition duration-300">GitHub</a>
             </div>
             <!-- mobile button goes here -->
-            <div class="md:hidden flex items-center text-zinc-300">
+            <div class="md:hidden flex items-center text-[#6e6e73]">
                 <button class="mobile-menu-button" aria-label="Menu Button">
                     <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
@@ -35,12 +35,12 @@ import Icon from "./icon.astro";
         </div>
     </div>
     <!-- mobile menu -->
-    <div class="mobile-menu hidden md:hidden pb-8 px-24 divide-y divide-zinc-400 text-zinc-100">
-        <a href="/about" class="block py-2 px-4 text-md hover:bg-zinc-700">About</a>
-        <a href="/macOS" class="block py-2 px-4 text-md hover:bg-zinc-700">macOS</a>
-        <a href="/documentation" class="block py-2 px-4 text-md hover:bg-zinc-700">Documentation</a>
-        <a href="/terms" class="block py-2 px-4 text-md hover:bg-zinc-700">Terms of Use</a>
-        <a href="https://github.com/davidjaimes" class="block py-2 px-4 text-md hover:bg-zinc-700">GitHub</a>
+    <div class="mobile-menu hidden md:hidden pb-8 px-24 divide-y divide-gray-300 text-[#6e6e73]">
+        <a href="/about" class="block py-2 px-4 text-md hover:bg-zinc-700 hover:text-gray-300">About</a>
+        <a href="/macOS" class="block py-2 px-4 text-md hover:bg-zinc-700 hover:text-gray-300">macOS</a>
+        <a href="/documentation" class="block py-2 px-4 text-md hover:bg-zinc-700 hover:text-gray-300">Documentation</a>
+        <a href="/terms" class="block py-2 px-4 text-md hover:bg-zinc-700 hover:text-gray-300">Terms of Use</a>
+        <a href="https://github.com/davidjaimes" class="block py-2 px-4 text-md hover:bg-zinc-700 hover:text-gray-300">GitHub</a>
     </div>
 </nav>
 
