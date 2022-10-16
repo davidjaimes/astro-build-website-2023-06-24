@@ -18,7 +18,7 @@ const posts = await Astro.glob('../pages/*.md');
       </div>
 
       {posts.map(post=> (
-        <div class="flex justify-center">
+        <div class="flex justify-center pb-12 last:pb-0">
             <Card title={post.frontmatter.title} path={post.url} image={post.frontmatter.image} date={post.frontmatter.date} excerpt={post.frontmatter.excerpt}></Card>
         </div>
       ))}
