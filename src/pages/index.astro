@@ -10,7 +10,7 @@ const posts = await Astro.glob('../pages/*.md');
       <div class="text-lg text-center text-zinc-500">
         <p>Website created by David Jaimes and powered by</p>
         <div class="flex justify-center pt-4 pb-16 flex-wrap">
-          <img class="h-10 w-48 pr-4" alt="Google Domains Logo" src="https://www.gstatic.com/images/branding/lockups/svg/lockup_google_domains_867x140px_clr.svg">
+          <img class="h-10 w-54 pr-4" alt="Google Domains Logo" src="https://www.gstatic.com/images/branding/lockups/svg/lockup_google_domains_867x140px_clr.svg">
           <img class="h-12 w-40 pr-6" alt="Gatsby Logo" src="astro-logo.svg">
           <img class="h-10 w-38" alt="Github Logo" src="GitHub-Mark-64px.png">
           <img class="h-10 w-38" alt="Github Logo" src="GitHub_Logo.png">
@@ -19,7 +19,7 @@ const posts = await Astro.glob('../pages/*.md');
 
       {posts.map(post=> (
         <div class="flex justify-center">
-            <Card title={post.frontmatter.title} path={post.url} image={post.frontmatter.image} date={post.frontmatter.date}></Card>
+            <Card title={post.frontmatter.title} path={post.url} image={post.frontmatter.image} date={post.frontmatter.date} excerpt={post.frontmatter.excerpt}></Card>
         </div>
       ))}
 	</div>
