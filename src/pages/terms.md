@@ -6,7 +6,7 @@ badges:
     - Copyright
 image: mount-laguna.webp
 alt: mount-laguna
-excerpt: Terms and conditions of use apply to the David Jaimes web site.
+excerpt: Terms and conditions of use apply to thi web site created by David Jaimes.
 ---
 
 ## Ownership of Site

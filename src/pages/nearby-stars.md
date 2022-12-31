@@ -8,7 +8,7 @@ badges:
     - Astropy
 image: nearby-stars.webp
 alt: nearby-stars
-excerpt: Plotting luminosity versus surface temperature for nearby stars.
+excerpt: Plotting luminosity versus surface temperature for nearby stars--closer than 25 light years.
 ---
 
 <p align="center">Data Source: <a href="http://www.johnstonsarchive.net/astro/nearstar.html">Robert Johnston's Archive</a></p>
