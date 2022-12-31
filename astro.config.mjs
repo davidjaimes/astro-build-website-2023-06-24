@@ -7,5 +7,10 @@ export default defineConfig({
   integrations: [tailwind({
     config: { applyBaseStyles: true },
   })],
-  site: "https://davidjaimes.github.io"
+  site: "https://davidjaimes.github.io",
+  markdown: {
+    shikiConfig: {
+      theme: 'github-dark-dimmed'
+    },
+  },
 });

@@ -76,7 +76,7 @@ import pandas as pd
 
 Read fixed-width formatted (fwf) data file.
 
-```python{numberLines:6-11}
+```python
 widths = [28, 12, 11, 8, 8, 9, 9, 10, 10, 9, 5, 11, 6, 9, 14, 10, 7, 6, 8, 7,
     8, 9, 9, 9, 6]
 columns = ['DIST', 'Mv', 'BOL-LUM', 'RADIUS', 'Unnamed: 19', 'Teff']
@@ -89,7 +89,7 @@ df = df.rename(columns={'Unnamed: 19': 'Radunit'})
 
 Convert to number from string.
 
-```python{numberLines:12-15}
+```python
 columns = ['Teff', 'Mv', 'DIST', 'RADIUS', 'BOL-LUM']
 for col in columns:
     df[col] = df[col].str.replace(r'[a-zA-Z]', '', regex=True)
@@ -100,7 +100,7 @@ for col in columns:
 
 Radius conversion from Sun, Jupiter, and Earth.
 
-```python{numberLines:15-18}
+```python
 w = df['Radunit'] == 'Rj'
 df.loc[w, 'RADIUS'] /= 9.9604
 w = df['Radunit'] == 'Re'
@@ -111,7 +111,7 @@ df.loc[w, 'RADIUS'] /= 109.18
 
 Temperature-Luminosity Relation lines.
 
-```python{numberLines:19-23}
+```python
 t = np.linspace(250, 1e4, 1000) * u.K
 r = np.logspace(-3, 3, 7) * u.R_sun
 T, R = np.meshgrid(t, r)
@@ -123,7 +123,7 @@ L = (coef * pow(R, 2) * pow(T, 4)).to('Lsun')
 
 Plot Temperature-Luminosity Relation lines
 
-```python{numberLines:24-30}
+```python
 plt.figure(figsize=(10, 6))
 CS = plt.contour(T, L, R, levels=r, colors='slategrey', linestyles='-',
     zorder=2)
@@ -137,7 +137,7 @@ plt.clabel(CS, fmt = r'%.3g R$_{\odot}$', inline=True, manual=manual,
 
 Plot data and contour lines
 
-```python{numberLines:31-38}
+```python
 cb = plt.scatter(df['Teff'], df['BOL-LUM'], s=1e3*df['RADIUS'], c=df['DIST'],
 	zorder=3, alpha=1, cmap='viridis')
 plt.scatter(5778, 1, s=1e3, c='red', label='Sun', zorder=4)
@@ -152,7 +152,7 @@ plt.title('Data Source: http://www.johnstonsarchive.net/astro/nearstar.html',
 
 Plot options
 
-```python{numberLines:39-46}
+```python
 plt.grid(zorder=1, ls=':', color='gainsboro', which='both')
 plt.gca().set_xticks(np.arange(0, 10500, 500), minor=True)
 plt.xlim(1e4, 0)
@@ -165,4 +165,4 @@ plt.savefig('nearby-stars.png', dpi=300, transparent=True)
 
 <br/>
 
-![nearby-stars](nearby-stars.png)
+![nearby-stars](/nearby-stars.png)
