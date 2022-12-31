@@ -12,5 +12,7 @@ export default defineConfig({
     shikiConfig: {
       theme: 'github-dark-dimmed'
     },
+    remarkPlugins: ['remark-math'],
+    rehypePlugins: ['rehype-katex']
   },
 });

@@ -13,13 +13,9 @@ excerpt: Plotting luminosity versus surface temperature for nearby stars.
 
 <p align="center">Data Source: <a href="http://www.johnstonsarchive.net/astro/nearstar.html">Robert Johnston's Archive</a></p>
 
-<br/><br/>
-
 ## Classifying Stars
 
 Luminosity and surface temperature (color) are two properties of stars we can measure. Using these two characteristics has proved extraordinarily effective un understanding the properties of stars-the Hertzsprung Russell (HR) diagram. The Stefan-Boltzmann equation applied to a black body gives the value for luminosity for a black body, an idealized object which is perfectly opaque and non reflecting:
-
-<br/>
 
 $$
 \begin{equation}
@@ -32,8 +28,6 @@ $$
 \sigma_B = 5.670 \times 10^{-8} W m^{-2} K^{-4}
 \end{equation}
 $$
-
-<br/>
 
 ## Data Information
 
@@ -48,8 +42,6 @@ Counts of listed objects include:
 - 63 planets beyond our solar system: 10 systems with one known planet each; 8 systems with 2-3 known planets each; 5 systems with 6-7 known planets each; 1 free-floating planet.
 - total detected mass of 76.2 M$_{\odot}$--average density of ~1.2 M$_{Jup}$ per cubic light year.
 
-<br/>
-
 ## Read Fixed-Width Formatted File
 
 Relationship between Solar, Jupiter, and Earth radii:
@@ -59,8 +51,6 @@ $$
 1 R_{\odot} = 9.9604 R_{Jup} = 109.18 R_{\oplus}
 \end{equation}
 $$
-
-<br/>
 
 Import Python Packages
 
