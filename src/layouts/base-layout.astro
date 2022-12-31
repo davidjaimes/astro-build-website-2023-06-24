@@ -30,7 +30,7 @@ const { title } = Astro.props;
     :global(.post-content p) {
         @apply pb-6 font-normal leading-relaxed;
     }
-	pre {
-		@apply bg-white rounded-full
+	:global(.post-content pre) {
+		@apply p-4 rounded-lg text-xs;
 	}
 </style>
