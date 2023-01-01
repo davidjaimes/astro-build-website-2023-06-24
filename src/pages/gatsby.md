@@ -44,7 +44,7 @@ git checkout -b source
 
 Then add a `deploy` script to `package.json` in your repository’s codebase:
 
-```js{numberLines: true}
+```js
 {
   "scripts": {
     "deploy": "gatsby build && gh-pages -d public -b main"
@@ -92,7 +92,7 @@ npm install --save gatsby-remark-prismjs prismjs
 
 In order for Prism to render properly with a custom theme you need the following line in `gatsby-browser.js` and also save the theme in `node_modules/prismjs/themes`:
 
-```js{numberLines:true}
+```js
 require("prismjs/themes/base16-google.light.css")
 require("prismjs/plugins/line-numbers/prism-line-numbers.css")
 require("prismjs/plugins/command-line/prism-command-line.css")

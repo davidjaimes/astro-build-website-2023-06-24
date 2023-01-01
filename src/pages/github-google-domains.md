@@ -23,7 +23,7 @@ Go to [Google Domains website](https://domains.google) and select your desired p
 
 The first thing to do is head on over to **DNS** settings and create new custom resource records. This [GitHub Docs page](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site) gives specific instructions but can be a little confusing to follow because they are not Google Domains specific. Create the `A` record:
 
-```
+```bash
 Host Name    Type    TTL     Data
 @            A       3600    185.199.108.153
                              185.199.109.153
@@ -33,7 +33,7 @@ Host Name    Type    TTL     Data
 
 Next, create a `CNAME` record and don't forget the period (".") at the end of your data entry:
 
-```
+```bash
 Host Name    Type     TTL     Data
 www          CNAME    3600    davidjaimes.github.io.
 ```
@@ -51,7 +51,7 @@ dig +noall +answer davidjaimes.com
 
 This is the ouput:
 
-```
+```bash
 davidjaimes.com.        3055    IN      A       185.199.110.153
 davidjaimes.com.        3055    IN      A       185.199.111.153
 davidjaimes.com.        3055    IN      A       185.199.109.153
