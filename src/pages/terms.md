@@ -11,7 +11,7 @@ excerpt: Terms and conditions of use apply to thi web site created by David Jaim
 
 ## Ownership of Site
 
-These Terms and Conditions of Use (the "Terms of Use") apply to the David Jaimes web site located at https://davidjaimes.com, and all associated sites linked to https://davidjaimes.com by David Jaimes, its subsidiaries and affiliates, including David Jaimes sites around the world (collectively, the "Site"). The Site is the property of David Jaimes. BY USING THE SITE, YOU AGREE TO THESE TERMS OF USE; IF YOU DO NOT AGREE, DO NOT USE THE SITE.
+These Terms and Conditions of Use (the "Terms of Use") apply to the David Jaimes web site located at [https://davidjaimes.com](https://davidjaimes.com), and all associated sites linked to [https://davidjaimes.com](https://davidjaimes.com) by David Jaimes, its subsidiaries and affiliates, including David Jaimes sites around the world (collectively, the "Site"). The Site is the property of David Jaimes. BY USING THE SITE, YOU AGREE TO THESE TERMS OF USE; IF YOU DO NOT AGREE, DO NOT USE THE SITE.
 
 David Jaimes reserves the right, at its sole discretion, to change, modify, add or remove portions of these Terms of Use, at any time. It is your responsibility to check these Terms of Use periodically for changes. Your continued use of the Site following the posting of changes will mean that you accept and agree to the changes. As long as you comply with these Terms of Use, David Jaimes grants you a personal, non-exclusive, non-transferable, limited privilege to enter and use the Site.
 
@@ -19,7 +19,21 @@ Views expressed on this website are solely those of David Jaimes and are not tho
 
 ## Content
 
-All text, graphics, user interfaces, visual interfaces, photographs, trademarks, logos, sounds, music, artwork, and computer code (collectively, "Content"), including but not limited to the design, structure, selection, coordination, expression, "look and feel" and arrangement of such Content, contained on the Site is owned, controlled or licensed by or to David Jaimes, and is protected by trade dress, copyright, patent and trademark laws, and various other intellectual property rights and unfair competition laws.
+All:
+- text,
+- graphics,
+- user interfaces,
+- visual interfaces, 
+- photographs, 
+- trademarks, 
+- logos, 
+- sounds, 
+- music, 
+- artwork,
+
+<br>
+
+and computer code (collectively, "Content"), including but not limited to the design, structure, selection, coordination, expression, "look and feel" and arrangement of such Content, contained on the Site is owned, controlled or licensed by or to David Jaimes, and is protected by trade dress, copyright, patent and trademark laws, and various other intellectual property rights and unfair competition laws.
 
 Except as expressly provided in these Terms of Use, no part of the Site and no Content may be copied, reproduced, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted or distributed in any way (including "mirroring") to any other computer, server, Web site or other medium for publication or distribution or for any commercial enterprise, without David Jaimes' express prior written consent.
 

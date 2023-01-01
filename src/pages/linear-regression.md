@@ -126,7 +126,7 @@ Using the standard linear algebra method of this Section, fit a straight line $y
 <br/>
 
 Table 1 on page 6:
-```atom
+```bash
 ID    x    y  sig_y  sig_x  rho_xy
  1  201  592     61      9   -0.84
  2  244  401     25      4    0.31
