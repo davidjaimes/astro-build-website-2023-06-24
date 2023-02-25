@@ -6,7 +6,7 @@ path: /eclipsing-binaries
 badges:
     - Python
     - Astropy
-image: koi-3570-pflc.webp
+image: koi-3570-pflc.png
 alt: koi-3570
 excerpt: Time series analysis in search for eclipsing binary stars can be daunting. Sometimes, it takes hours--even days or months--to find a single eclipsing binary in a dataset.
 ---
