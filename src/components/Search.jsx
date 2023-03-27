@@ -29,7 +29,7 @@ function Search({ searchList }) {
 
   return (
     <div>
-      <label htmlFor="search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">
+      <label htmlFor="search" className="mb-2 font-medium text-gray-900 sr-only dark:text-white">
         Search
       </label>
       <div className="relative">
@@ -56,7 +56,7 @@ function Search({ searchList }) {
           id="search"
           value={query}
           onChange={handleOnSearch}
-          className="block w-full p-4 pl-10 text-sm 
+          className="block w-full p-4 pl-10
                               text-gray-900 
                               border border-gray-300
                               rounded-lg bg-gray-50
