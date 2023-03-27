@@ -1,5 +1,6 @@
 ---
 import Icon from "./icon.astro";
+import SearchIcon from "./magnifying-glass.astro";
 import GithubIcon from "./github-icon.astro";
 import StravaIcon from "./strava-icon.astro";
 import InstagramIcon from "./instagram-icon.astro";
@@ -25,6 +26,7 @@ import TwitterIcon from "./twitter-icon.astro";
             </div>
             <!-- secondary nav -->
             <div class="hidden md:flex flex items-center space-x-1">
+                <a href="/search" class="py-3 px-3 text-[#f0f6fc] hover:text-zinc-300"><SearchIcon></SearchIcon></a>
                 <a href="https://github.com/davidjaimes" class="py-3 px-3 text-[#f0f6fc] hover:text-zinc-300"><GithubIcon></GithubIcon></a>
                 <a href="https://instagram.com/davidjaimes__" class="py-3 px-3 text-[#f0f6fc] hover:text-zinc-300"><InstagramIcon></InstagramIcon></a>
                 <a href="https://twitter.com/_davidjaimes" class="py-3 px-3 text-[#f0f6fc] hover:text-zinc-300"><TwitterIcon></TwitterIcon></a>
@@ -32,7 +34,7 @@ import TwitterIcon from "./twitter-icon.astro";
             <!-- mobile button goes here -->
             <div class="md:hidden flex items-center text-[#6e6e73]">
                 <button class="mobile-menu-button" aria-label="Menu Button">
-                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
                       </svg>                      
                 </button>
@@ -43,10 +45,10 @@ import TwitterIcon from "./twitter-icon.astro";
     <div class="mobile-menu hidden md:hidden pb-8 px-24 text-[#6e6e73] text-center">
         <a href="/search" class="block py-2 px-4 text-md hover:bg-zinc-700 hover:text-gray-300 rounded-[12px]">Search</a>
         <a href="/about" class="block py-2 px-4 text-md hover:bg-zinc-700 hover:text-gray-300 rounded-[12px]">About</a>
-        <a href="/macOS" class="block py-2 px-4 text-md hover:bg-zinc-700 hover:text-gray-300 rounded-[12px]">macOS</a>
-        <a href="/documentation" class="block py-2 px-4 text-md hover:bg-zinc-700 hover:text-gray-300 rounded-[12px]">Documentation</a>
-        <a href="/terms" class="block py-2 px-4 text-md hover:bg-zinc-700 hover:text-gray-300 rounded-[12px]">Terms of Use</a>
         <a href="https://github.com/davidjaimes" class="block py-2 px-4 text-md hover:bg-zinc-700 hover:text-gray-300 rounded-[12px]">GitHub</a>
+        <a href="https://instagram.com/davidjaimes__" class="block py-2 px-4 text-md hover:bg-zinc-700 hover:text-gray-300 rounded-[12px]">Instagram</a>
+        <a href="https://twitter.com/_davidjaimes" class="block py-2 px-4 text-md hover:bg-zinc-700 hover:text-gray-300 rounded-[12px]">Twitter</a>
+        <a href="/terms" class="block py-2 px-4 text-md hover:bg-zinc-700 hover:text-gray-300 rounded-[12px]">Terms of Use</a>
     </div>
 </nav>
 
