@@ -1,5 +1,9 @@
 ---
 import Icon from "./icon.astro";
+import SearchIcon from "./magnifying-glass.astro";
+import GithubIcon from "./github-icon.astro";
+import InstagramIcon from "./instagram-icon.astro";
+import TwitterIcon from "./twitter-icon.astro";
 ---
 
 <footer class="p-4 bg-[#0d1117] md:px-6 md:py-8 bottom-0 w-full">
@@ -10,28 +14,24 @@ import Icon from "./icon.astro";
             <span class="self-center text-lg font-light whitespace-nowrap text-[#b1bac4]">davidjaimes.com</span>
         </a>
         <ul class="flex flex-wrap items-center mt-4 mb-4 text-sm text-[#b1bac4] sm:mb-0">
-            <li>
-                <a href="/search" class="mr-4 hover:underline md:mr-6 text-sky-500">Search</a>
-            </li>
-            <li>
-                <a href="/about" class="mr-4 hover:underline md:mr-6 text-sky-500">About</a>
-            </li>
-            <li>
-                <a href="https://github.com/davidjaimes" class="mr-4 hover:underline md:mr-6 text-sky-500">Github</a>
-            </li>
-            <li>
-                <a href="https://instagram.com/davidjaimes__" class="mr-4 hover:underline md:mr-6 text-sky-500">Instagram</a>
-            </li>
-            <li>
-                <a href="https://twitter.com/_davidjaimes" class="mr-4 hover:underline md:mr-6 text-sky-500">Twitter</a>
-            </li>
-            <li>
-                <a href="/terms" class="mr-4 hover:underline md:mr-6 text-sky-500">Terms of Use</a>
-            </li>
+            <a href="/search" class="py-3 px-3 text-[#f0f6fc] hover:text-zinc-300"><SearchIcon></SearchIcon></a>
+            <a href="https://github.com/davidjaimes" class="py-3 px-3 text-[#f0f6fc] hover:text-zinc-300"><GithubIcon></GithubIcon></a>
+            <a href="https://instagram.com/davidjaimes__" class="py-3 px-3 text-[#f0f6fc] hover:text-zinc-300"><InstagramIcon></InstagramIcon></a>
+            <a href="https://twitter.com/_davidjaimes" class="py-3 px-3 text-[#f0f6fc] hover:text-zinc-300"><TwitterIcon></TwitterIcon></a>
         </ul>
     </div>
     <hr class="my-6 mt-10 border-gray-300 sm:mx-auto lg:my-10 max-w-4xl" />
-    <span class="block text-sm text-[#b1bac4] sm:text-center">© 2023 <a href="/" class="hover:underline">David Jaimes</a>. All Rights Reserved.
-    </span>
+    <span class="block text-sm text-[#b1bac4] sm:text-center">Copyright © 2023 <a href="/" class="hover:underline">David Jaimes</a>. All Rights Reserved.</span>
+    <ul class="flex flex-wrap items-center mt-4 mb-2 text-sm text-[#b1bac4] sm:mb-0 max-w-4xl mx-auto sm:justify-center xs:justify-between">
+            <li>
+                <a href="/search" class="sm:ml-4 mr-4 hover:underline text-sky-500">Search</a>
+            </li>
+            <li>
+                <a href="/about" class="mr-4 hover:underline text-sky-500">About</a>
+            </li>
+            <li>
+                <a href="/terms" class="mr-4 hover:underline text-sky-500">Terms of Use</a>
+            </li>
+        </ul>
     <span class="block text-sm text-[#b1bac4] sm:text-center pt-4 pb-4 ">Yo <span class="text-red-400">&hearts;</span> Naxiely</span>
 </footer>
