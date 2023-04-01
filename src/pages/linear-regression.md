@@ -47,16 +47,23 @@ You have a set of $N > 2$ points ($x_i, y_i)$, with no  Gaussian uncertainties i
 <br><br>
 
 Constructing the matrices to solve the matrix equation, $Y = XB$:
+
 $$
 \begin{equation}
 Y =
 \begin{bmatrix}
-    y_5 \\ y_6 \\ ... \\ y_{20} \\
+    y_5
+    y_6
+    ...
+    y_{20}
 \end{bmatrix}
-\\ ,
+,
 X =
 \begin{bmatrix}
-    1 & x_5 \\ 1 & x_6 \\ ...& ... \\ 1 & x_{20} \\
+    1 & x_5
+    1 & x_6
+    ...& ...
+    1 & x_{20}
 \end{bmatrix}
 \end{equation}
 $$
@@ -65,7 +72,8 @@ $$
 \begin{equation}
 B =
 \begin{bmatrix}
-    b \\ m
+    b
+    m
 \end{bmatrix}
 = (X^T X)^{-1} X^T Y
 \end{equation}
@@ -99,23 +107,15 @@ $$
 where $m$ is the slope and $b$ is the intercept, that best fits the points. This exercise is adapted from `Data analysis recipes: Fitting a model to data` by David W. Hogg and Jo Bovy and Dustin Lang, 2010, 1008.4686, arXiv, astro-ph.IM, [https://arxiv.org/abs/1008.4686](https://arxiv.org/abs/1008.4686).
 
 Using the covariance matrix, $C$, prepare the matrices to solve the matrix equation, $Y = XB$:
+
 $$
 \begin{equation}
 C =
 \begin{bmatrix}
-    \sigma^2_{y1} & 0 & ... & 0 \\
-    0 & \sigma^2_{y2} & ... & 0 \\
-    ...& ... & ... & ... \\ 
-    0 & 0 & ... & \sigma^2_{yN} \\
-\end{bmatrix}
-\end{equation}
-$$
-
-$$
-\begin{equation}
-B =
-\begin{bmatrix}
-    b \\ m
+    \sigma^2_{y1} & 0 & ... & 0
+    0 & \sigma^2_{y2} & ... & 0
+    ...& ... & ... & ...
+    0 & 0 & ... & \sigma^2_{yN}
 \end{bmatrix}
 \end{equation}
 $$
@@ -130,7 +130,7 @@ $$
 \begin{equation}
 V = 
 \begin{bmatrix}
-    \sigma^2_b & \alpha \\
+    \sigma^2_b & \alpha
     \alpha & \sigma^2_m
 \end{bmatrix}
 \end{equation}
