@@ -156,14 +156,14 @@ n = len(df)
 
 Y = df.y.values.reshape((n, 1))
 X = numpy.matrix([numpy.ones(n), df.x]).T
-C = np.diag(pow(df.sig_y.values, 2))
+C = numpy.diag(pow(df.sig_y.values, 2))
 inv = numpy.linalg.inv
 b1 = inv(X.T @ inv(C) @ X)
 b2 = X.T @ inv(C) @ Y
 B = b1 @ b2
 b, m = B.item(0), B.item(1)
-sig_b = np.sqrt(b1.item(0))
-sig_m = np.sqrt(b1.item(3))
+sig_b = numpy.sqrt(b1.item(0))
+sig_m = numpy.sqrt(b1.item(3))
 ```
 
 ![exercise1](/exercise1.png)
