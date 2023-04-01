@@ -19,8 +19,9 @@ I'm a [data scientist](https://en.wikipedia.org/wiki/Data_science) with a bachel
 
 I possess: 
 
-- Exceptional analytical and conceptual thinking skills that drive an unquenchable, technical curiosity to find truths embedded in any dataset.
+- Exceptional analytical and conceptual thinking skills that drive an unquenchable, technical curiosity to find truths embedded in any data set.
 - Senior-level experience using statistical modules and data visualization libraries.
+<br><br>
 
 I have a passion for:
 
@@ -28,7 +29,7 @@ I have a passion for:
 - Understanding and teaching best practices when developing applications that directly affects the operational execution of any organization.
 
 ## Fun Question to Ask
-How much does a teaspoon of neutron star matter weight? Please answer in of number of elephants.
+How much does a teaspoon of neutron star matter weight? Please answer in number of elephants.
 
 ```python
 from astropy import units as u
