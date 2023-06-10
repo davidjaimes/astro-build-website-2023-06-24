@@ -13,9 +13,9 @@ excerpt: JSkyCalc expedites the "time-and-the-sky" calculations needed by observ
 
 <br>
 
-**JSkycalc** expedites the "time-and-the-sky" calculations needed by observational astronomers. The most up to date instructions to install on Apple M1 chip, install Oracle-Java JDK, and add new site locations.
+JSkycalc expedites the "time-and-the-sky" calculations needed by observational astronomers. The most up to date instructions to install on Apple M1 chip, install Oracle-Java JDK, and add new site locations.
 
-John Thorstensen's Darthmount website is no longer is use: [dartmouth.edu/~physics/labs/skycalc](https://dartmouth.edu/~physics/labs/skycalc)
+**ATTENTION:** John Thorstensen's Dartmouth website is no longer is use: [dartmouth.edu/~physics/labs/skycalc](https://dartmouth.edu/~physics/labs/skycalc)
 
 ![](/jskycalc-sky-display.png)
 
@@ -25,7 +25,7 @@ Go to [John Thorstensen's][2] GitHub page and download the `JSkyCalc.jar` execut
 
 ## Create a New Directory in Home Folder
 
-I suggest creating a new folder in your home directory and placing the jar file in there. If your jar file is in your Downloads folder after downloading from John's site, you can copy paste the three commands to your terminal and you should end up in your `jskycalc` directory, under your home folder.
+I suggest creating a new folder in your home directory and placing the jar file in there. If your jar file is in your Downloads folder after downloading from John's site, you can copy paste the three (3) commands to your terminal and you should end up in your `jskycalc` directory, under your home folder.
 
 ```bash
 mkdir ~/jskycalc
@@ -43,7 +43,7 @@ cd ~/jskycalc
 
 Run the java command on the jar file and it should start right up. If you don't have java installed in your system you will get a messege:
 
-```bash
+```
 The operation couldn’t be completed. Unable to locate a Java Runtime.
 Please visit http://www.java.com for information on installing Java.
 ```
@@ -53,8 +53,6 @@ Do not go to Java.com. Instead use this link [Oracle-Java][1].  Click on "Arm 64
 ```bash
 java -jar JSkyCalc.jar
 ```
-
-![](/jskycalc.png)
 
 ## Unpack Files from Jar File
 
@@ -80,11 +78,9 @@ The following is the general format for adding new site locations:
 
 Open `skycalcsites.dat` and add Mount Laguna Observatory as the first site (above Kitt Peak)--it will become the default.
 
-```bash
+```
 "Mount Laguna Obs.", 7.76173, 32.84, 8., 1, "Pacific", "P", 1859., 1859.
 ```
-
-![](/jskycalc-user-interface.png)
 
 ## Save Changes to Jar File
 
@@ -99,7 +95,6 @@ jar -cvmf myManifest.mf JSkyCalc.jar .
 Add following lines to your `~/.zshrc` file and you will be able to start JSkyCalc from any directory.
 
 ```bash
-# use jsky command in any directory to start JSkyCalc
 alias jsky='java JSkyCalc'
 CLASSPATH=$CLASSPATH:~/JSkyCalc
 export CLASSPATH
@@ -111,7 +106,7 @@ Finally, use the command `source ~/.zshrc` to source the file and then use jsky 
 
 The following line is the general format for JSkyCalc (.dat) files:
 
-```bash
+```
 Name_no_blanks hh mm ss dd mm ss equinox +++
 ```
 
