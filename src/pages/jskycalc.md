@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/post-layout.astro
-date: "Dec 31, 2022"
+date: "June 10, 2023"
 title: "JSkyCalc for Apple Computers with M1 Chip"
 path: /jskycalc
 badges:
@@ -17,7 +17,7 @@ JSkycalc expedites the "time-and-the-sky" calculations needed by observational a
 
 **ATTENTION:** John Thorstensen's Dartmouth website is no longer is use: [dartmouth.edu/~physics/labs/skycalc](https://dartmouth.edu/~physics/labs/skycalc)
 
-![](/jskycalc-sky-display.png)
+![](../assets/jskycalc-sky-display.png)
 
 ## Download .jar File
 
@@ -118,7 +118,7 @@ Altair 19 50 46.99855 08 52 05.9563 2000.0 +++
 Deneb 20 41 25.9 45 16 49 2000.0 +++
 ```
 
-![](/airmass-display.png)
+![](../assets/airmass-display.png)
 
 ## References
 
