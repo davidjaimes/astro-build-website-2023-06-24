@@ -17,8 +17,6 @@ JSkycalc expedites the "time-and-the-sky" calculations needed by observational a
 
 **ATTENTION:** John Thorstensen's Dartmouth website is no longer is use: [dartmouth.edu/~physics/labs/skycalc](https://dartmouth.edu/~physics/labs/skycalc)
 
-![](../assets/jskycalc-sky-display.png)
-
 ## Download .jar File
 
 Go to [John Thorstensen's][2] GitHub page and download the `JSkyCalc.jar` executable jar file.
