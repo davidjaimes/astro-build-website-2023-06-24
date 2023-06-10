@@ -13,7 +13,8 @@ export default defineConfig({
   site: "https://davidjaimes.github.io",
   markdown: {
     shikiConfig: {
-      theme: 'github-dark-dimmed'
+      theme: 'github-dark-dimmed',
+      wrap: false
     },
     remarkPlugins: ['remark-math'],
     rehypePlugins: ['rehype-katex']
