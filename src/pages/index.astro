@@ -4,6 +4,7 @@ import Card from "../components/card.astro";
 
 const posts = await Astro.glob('../pages/*.md');
 posts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
+import Search from '../components/Search';
 
 import { Image } from "astro:assets"
 import googleLogo from "../assets/Google_Domains_logo.svg"
@@ -14,6 +15,9 @@ import githubLogo from "../assets/GitHub_Logo.png"
 <BaseLayout title="Home">
     <div class="max-w-4xl mx-auto px-4 md:px-6 sm:px-4 xs:px-6 lg:px-0 xl:px-0 py-14 text-zinc-700">
 
+      <div class="max-w-4xl mx-auto px-4 md:px-6 sm:px-4 xs:px-6 lg:px-0 xl:px-0 py-14 text-zinc-700">
+        <Search client:load searchList={posts} class="pb-12"></Search>
+      </div>
       
       <div class="text-lg text-center text-[#b1bac4]">
         <p>Website created by David Jaimes and powered by</p>
