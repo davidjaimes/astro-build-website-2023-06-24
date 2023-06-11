@@ -4,7 +4,7 @@ date: "Jan 01, 2022"
 title: Hello, I'm David
 path: /about
 badges:
-    - Short Bio
+    - Short Bio    
 image: profile.webp
 alt: profilePic
 excerpt: I'm a data scientist with a bachelor's in astronomy and a certificate in data science and visualization from UC San Diego.
@@ -12,8 +12,8 @@ excerpt: I'm a data scientist with a bachelor's in astronomy and a certificate i
 
 <br>
 
-![Location: The Cloisters, NYC.](/profile.jpg)
-<p style={{fontSize: '11px', textAlign: 'right'}}><b>Photo Credit:</b> Naxiely Cedano; <b>Location:</b> The Cloisters, NYC.</p>
+![Location: The Cloisters, NYC.](../assets/profile-circle.png)
+<p style={{fontSize: '11px', textAlign: 'right'}}><b>Photo Credit:</b> Naxiely Cedano; <b>Location:</b> Chiapas, Mexico.</p>
 
 I'm a [data scientist](https://en.wikipedia.org/wiki/Data_science) with a bachelor's in astronomy and a certificate in data science and visualization from UC San Diego.
 
