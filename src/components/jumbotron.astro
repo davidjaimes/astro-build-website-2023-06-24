@@ -1,0 +1,27 @@
+---
+import GoogleIcon from "./google-domains-icon.astro";
+import AstroIcon from "./astro-icon.astro";
+import GithubIcon from "./github-icon.astro";
+---
+
+<section class="bg-[#0d1117]">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Bienvenido!</h1>
+        <p class="mb-8 text-lg font-normal text-[#b1bac4] lg:text-xl sm:px-16 lg:px-48">website powered by</p>
+
+        <div class="flex pb-10 space-x-1 sm:justify-center text-[#b1bac4]">
+        	<GoogleIcon pathfill="#b1bac4"></GoogleIcon>
+        	<p class="text-sm pr-4">Google</p>
+        	<AstroIcon pathfill="#b1bac4"></AstroIcon>
+        	<p class="text-sm pr-4">Astro</p>
+        	<GithubIcon pathfill="#b1bac4"></GithubIcon>
+        	<p class="text-sm">GitHub</p>
+        </div>
+
+        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+            <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                learn more about me
+            </a>  
+        </div>
+    </div>
+</section>
