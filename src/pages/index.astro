@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/base-layout.astro";
 import Card from "../components/card.astro";
+import Jumbotron from "../components/jumbotron.astro";
 
 const posts = await Astro.glob('../pages/*.md');
 posts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
@@ -13,21 +14,14 @@ import githubMark from "../assets/GitHub-Mark-64px.png"
 import githubLogo from "../assets/GitHub_Logo.png"
 ---
 <BaseLayout title="Home">
-    <div class="max-w-4xl mx-auto px-4 md:px-6 sm:px-4 xs:px-6 lg:px-0 xl:px-0 py-14 text-zinc-700">
+    <div class="max-w-4xl mx-auto px-4 md:px-6 sm:px-4 xs:px-6 lg:px-0 xl:px-0 pb-14 text-zinc-700">
 
-      <div class="max-w-4xl mx-auto px-4 md:px-6 sm:px-4 xs:px-6 lg:px-0 xl:px-0 py-14 text-zinc-700">
+      <Jumbotron></Jumbotron>
+
+      <div class="max-w-4xl mx-auto px-4 md:px-6 sm:px-4 xs:px-6 lg:px-0 xl:px-0 pb-20 text-zinc-700">
         <Search client:load searchList={posts} class="pb-12"></Search>
       </div>
       
-      <div class="text-lg text-center text-[#b1bac4]">
-        <p>Website created by David Jaimes and powered by</p>
-        <div class="flex justify-center pt-4 pb-16 flex-wrap xs:display-block">
-          <img class="h-8 w-50 pr-6 mt-5" alt="Google Domains Logo" src={googleLogo.src} height={googleLogo.height} width={googleLogo.width} />
-          <img class="h-9 w-50 pr-6 mt-5" alt="Astro Logo" src={astroLogo.src} height={astroLogo.height} width={astroLogo.width} />
-          <Image class="h-8 w-9 pr-1 mt-5" alt="Github Logo" src={githubMark}/>
-          <Image class="h-8 w-20 mt-5" alt="Github Logo" src={githubLogo}/>
-        </div>
-      </div>
 
       {posts.map(post=> (
         <div class="flex justify-center pb-12 last:pb-0">
