@@ -11,7 +11,7 @@ export default defineConfig({
       applyBaseStyles: true
     }
   }), react()],
-  site: "https://davidjaimes.github.io/",
+  site: "https://davidjaimes.com/",
   markdown: {
     shikiConfig: {
       theme: 'github-dark-dimmed',
